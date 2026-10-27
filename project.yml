@@ -1,0 +1,26 @@
+name: CasaRemote
+options:
+  bundleIdPrefix: com.njbaker
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  CasaRemote:
+    type: application
+    platform: iOS
+    sources: [CasaRemote]
+    info:
+      path: CasaRemote/Info.plist
+      properties:
+        CFBundleDisplayName: CasaRemote
+        UILaunchScreen: {}
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.njbaker.casaremote
+        TARGETED_DEVICE_FAMILY: "1,2"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
